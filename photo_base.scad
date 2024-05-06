@@ -1,5 +1,4 @@
 use <./roundedcube.scad>
-use <./ellipsoid.scad>
 
 BOX_WIDTH = 161;
 BOX_DEPTH = 108;
@@ -21,11 +20,19 @@ TOP_INNER_WIDTH = 33;
 
 render_helper = 1; // Helps the quick render not have a "skin" on top of the hole
 
+function box_width() = BOX_WIDTH;
+function box_depth() = BOX_DEPTH;
+function box_height() = BOX_HEIGHT;
+function center_width_offset(width) = (BOX_WIDTH - width) / 2;
+function triple_width_offset(width) = (BOX_WIDTH - width * 2) / 3;
+function center_depth_offset(depth) = (BOX_DEPTH - depth) / 2;
+function triple_depth_offset(depth) = (BOX_DEPTH - depth) / 3;
+
 module base_block() {
     roundedcube(
         [BOX_WIDTH, BOX_DEPTH, BOX_HEIGHT],
         radius = BOX_RADIUS,
-        apply_to = "z"
+        apply_to = "zmax"
     );
 }
 

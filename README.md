@@ -3,10 +3,40 @@ A home for my photo caddy game oragnizer designs
 
 I stumbled across this group of game organizers designed to fit inside the Photo and Craft Keeper 4x6 inch storage bins (made by Simply Tidy and others).  This has lead down a rat hole of inserts and sparking ideas inside my head.  This is a place for me to design additional inserts as well as provide tools for others to easily design inserts as well.
 
+# Games
+- [Bears vs Babies](https://github.com/pcon/photo_caddy_game_organizers/tree/main/bears_vs_babies)
+- [Rumpelstiltskin](https://github.com/pcon/photo_caddy_game_organizers/tree/main/rumpelstiltskin)
+
 # Usage
 1. Check out the repo
 2. Create a new OpenSCAD file and `use` the `photo_base.scad` in your design
 3. Use the `difference()` function to remove parts to fit the game
+
+For simple card based holders you can use the `utilities.scad` file to generate a holder
+
+```
+use <../utilities.scad>
+
+CARD_WIDTH = 64;
+CARD_DEPTH = 89;
+CARD_HEIGHT = 23;
+
+BOOKLET_WIDTH = 117;
+BOOKLET_DEPTH = 91;
+BOOKLET_HEIGHT = 2.5;
+
+booklet = [117, 91, 2.5];
+
+two_card_holder(
+    CARD_WIDTH,
+    CARD_DEPTH,
+    CARD_HEIGHT,
+    booklet = booklet
+);
+
+// Omit the booklet to generate only the card slots
+
+```
 
 Feel free to fork this repo and add your own caddy inserts.  Or, create your own and file a PR and I'll add it to this one.
 
