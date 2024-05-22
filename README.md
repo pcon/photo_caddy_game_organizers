@@ -5,6 +5,7 @@ I stumbled across this group of game organizers designed to fit inside the Photo
 
 # Games
 - [Bears vs Babies](https://github.com/pcon/photo_caddy_game_organizers/tree/main/bears_vs_babies)
+- [Dungeon Roll](https://github.com/pcon/photo_caddy_game_organizers/tree/main/dungeon_roll)
 - [Rumpelstiltskin](https://github.com/pcon/photo_caddy_game_organizers/tree/main/rumpelstiltskin)
 
 # Usage

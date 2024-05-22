@@ -16,15 +16,18 @@ SIDE_INNER_DEPTH = 37.5;
 // total = 48.5
 TOP_CURVE_WIDTH = 15;
 TOP_CURVE_DIAMETER = 5;
-TOP_INNER_WIDTH = 33;
+TOP_INNER_WIDTH = 46;
 
 render_helper = 1; // Helps the quick render not have a "skin" on top of the hole
 
 function box_width() = BOX_WIDTH;
 function box_depth() = BOX_DEPTH;
 function box_height() = BOX_HEIGHT;
+function side_curve() = SIDE_CURVE_DIAMETER / 2;
+function top_curve() = TOP_CURVE_DIAMETER / 2;
 function center_width_offset(width) = (BOX_WIDTH - width) / 2;
 function triple_width_offset(width) = (BOX_WIDTH - width * 2) / 3;
+function triple_width_offset_single(width) = (BOX_WIDTH - width) / 3;
 function center_depth_offset(depth) = (BOX_DEPTH - depth) / 2;
 function triple_depth_offset(depth) = (BOX_DEPTH - depth) / 3;
 

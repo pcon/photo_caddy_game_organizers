@@ -2,7 +2,10 @@ use <./photo_base.scad>
 use <./roundedcube.scad>
 
 render_helper = 1; // Helps the quick render not have a "skin" on top of the hole
+max_height = box_height() - 1;
 THUMB_WIDTH = 25;
+
+function thumb_slot_y() = (box_depth() - THUMB_WIDTH) / 2;
 
 module card_slot(
     width = 63.5,
@@ -48,7 +51,9 @@ module two_card_holder(
     radius = 2,
     booklet = undef
 ) {
+    height = height > box_height() ? max_height : height;
     total_height = booklet == undef ? height : height + booklet[2];
+     
     
     difference() {
         photo_base();
