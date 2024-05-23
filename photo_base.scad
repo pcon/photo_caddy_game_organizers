@@ -25,11 +25,14 @@ function box_depth() = BOX_DEPTH;
 function box_height() = BOX_HEIGHT;
 function side_curve() = SIDE_CURVE_DIAMETER / 2;
 function top_curve() = TOP_CURVE_DIAMETER / 2;
+function label_depth() = LABEL_DEPTH;
 function center_width_offset(width) = (BOX_WIDTH - width) / 2;
 function triple_width_offset(width) = (BOX_WIDTH - width * 2) / 3;
 function triple_width_offset_single(width) = (BOX_WIDTH - width) / 3;
+function quad_width_offset_single(width) = (BOX_WIDTH - width) / 4;
 function center_depth_offset(depth) = (BOX_DEPTH - depth) / 2;
 function triple_depth_offset(depth) = (BOX_DEPTH - depth) / 3;
+function triple_depth_offset_single(width) = (BOX_DEPTH - width) / 3;
 
 module base_block() {
     roundedcube(

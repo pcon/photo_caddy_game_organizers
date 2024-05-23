@@ -6,6 +6,8 @@ max_height = box_height() - 1;
 THUMB_WIDTH = 25;
 
 function thumb_slot_y() = (box_depth() - THUMB_WIDTH) / 2;
+function thumb_slot_y2() = (box_depth() - THUMB_WIDTH * 2) / 3;
+function thumb_width() = THUMB_WIDTH;
 
 module card_slot(
     width = 63.5,
