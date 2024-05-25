@@ -8,6 +8,7 @@ I stumbled across this group of game organizers designed to fit inside the Photo
 - [Dungeon Roll](https://github.com/pcon/photo_caddy_game_organizers/tree/main/dungeon_roll)
 - [Jaipur](https://github.com/pcon/photo_caddy_game_organizers/tree/main/jaipur)
 - [Munckin](https://github.com/pcon/photo_caddy_game_organizers/tree/main/munchkin)
+- [One Night Ultimate Werewolf](https://github.com/pcon/photo_caddy_game_organizers/tree/main/one_night_ultimate_werewolf)
 - [Rumpelstiltskin](https://github.com/pcon/photo_caddy_game_organizers/tree/main/rumpelstiltskin)
 - [Splendor](https://github.com/pcon/photo_caddy_game_organizers/tree/main/splendor)
 

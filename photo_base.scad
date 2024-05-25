@@ -31,25 +31,27 @@ function triple_width_offset(width) = (BOX_WIDTH - width * 2) / 3;
 function triple_width_offset_single(width) = (BOX_WIDTH - width) / 3;
 function quad_width_offset_single(width) = (BOX_WIDTH - width) / 4;
 function center_depth_offset(depth) = (BOX_DEPTH - depth) / 2;
-function triple_depth_offset(depth) = (BOX_DEPTH - depth) / 3;
-function triple_depth_offset_single(width) = (BOX_DEPTH - width) / 3;
+function triple_depth_offset(depth) = (BOX_DEPTH - depth * 2) / 3;
+function triple_depth_offset_single(depth) = (BOX_DEPTH - depth) / 3;
+function quad_depth_offset(depth) = (BOX_DEPTH - depth * 3) / 4;
+function quad_depth_offset_single(depth) = (BOX_DEPTH - depth) / 4;
 
-module base_block() {
+module base_block(height) {
     roundedcube(
-        [BOX_WIDTH, BOX_DEPTH, BOX_HEIGHT],
+        [BOX_WIDTH, BOX_DEPTH, height],
         radius = BOX_RADIUS,
         apply_to = "zmax"
     );
 }
 
-module label_cutout() {
+module label_cutout(height) {
     offset_x = (BOX_WIDTH - LABEL_WIDTH) / 2;
     translate([offset_x, -render_helper, -render_helper])
-    cube([LABEL_WIDTH, LABEL_DEPTH + render_helper, BOX_HEIGHT + render_helper * 2]);
+    cube([LABEL_WIDTH, LABEL_DEPTH + render_helper, height + render_helper * 2]);
 }
 
-module side_cutout() {
-    height = BOX_HEIGHT + render_helper * 2;
+module side_cutout(height) {
+    height = height + render_helper * 2;
     half_side = SIDE_INNER_DEPTH / 2;
     
     translate([0, half_side, -render_helper])
@@ -66,16 +68,16 @@ module side_cutout() {
     circle(SIDE_CURVE_DIAMETER, $fn = 40);
 }
 
-module side_cutouts() {
+module side_cutouts(height) {
     translate([0, BOX_DEPTH / 2, 0])
-    side_cutout();
+    side_cutout(height);
     
     translate([BOX_WIDTH, BOX_DEPTH / 2, 0])
-    side_cutout();
+    side_cutout(height);
 }
 
-module top_cutout() {
-    height = BOX_HEIGHT + render_helper * 2;
+module top_cutout(height) {
+    height = height + render_helper * 2;
     half_side = TOP_INNER_WIDTH / 2;
     
     translate([BOX_WIDTH / 2, BOX_DEPTH, 0])
@@ -97,12 +99,12 @@ module top_cutout() {
     }
 }
 
-module photo_base() {
+module photo_base(height = BOX_HEIGHT) {
     difference() {
-        base_block();
-        label_cutout();
-        side_cutouts();
-        top_cutout();
+        base_block(height);
+        label_cutout(height);
+        side_cutouts(height);
+        top_cutout(height);
     }
 }
 
