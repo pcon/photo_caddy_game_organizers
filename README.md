@@ -55,7 +55,7 @@ name_of_game/
 ├── insert.scad
 ├── additional_part_1.scad
 ├── additional_part_2.scad
-├── REAMD.md
+├── README.md
 ├── models/
 │   ├── insert.stl
 │   ├── additional_part_1.stl
