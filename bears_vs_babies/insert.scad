@@ -8,7 +8,7 @@ BOOKLET_WIDTH = 117;
 BOOKLET_DEPTH = 91;
 BOOKLET_HEIGHT = 2.5;
 
-booklet = [117, 91, 2.5];
+booklet = [BOOKLET_WIDTH, BOOKLET_DEPTH, BOOKLET_HEIGHT];
 
 two_card_holder(
     CARD_WIDTH,

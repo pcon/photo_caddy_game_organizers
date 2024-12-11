@@ -8,6 +8,7 @@ THUMB_WIDTH = 25;
 function thumb_slot_y() = (box_depth() - THUMB_WIDTH) / 2;
 function thumb_slot_y2() = (box_depth() - THUMB_WIDTH * 2) / 3;
 function thumb_width() = THUMB_WIDTH;
+function thumb_slot_z(height) = (box_height() - height - 2);
 
 module card_slot(
     width = 63.5,
