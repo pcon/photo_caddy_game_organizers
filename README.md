@@ -7,6 +7,7 @@ I stumbled across this group of game organizers designed to fit inside the Photo
 - [Bears vs Babies](https://github.com/pcon/photo_caddy_game_organizers/tree/main/bears_vs_babies)
 - [Dungeon Roll](https://github.com/pcon/photo_caddy_game_organizers/tree/main/dungeon_roll)
 - [Jaipur](https://github.com/pcon/photo_caddy_game_organizers/tree/main/jaipur)
+- [Mr Jack Pocket](https://github.com/pcon/photo_caddy_game_organizers/tree/main/mr_jack_pocket)
 - [Munckin](https://github.com/pcon/photo_caddy_game_organizers/tree/main/munchkin)
 - [One Deck Dungeon](https://github.com/pcon/photo_caddy_game_organizers/tree/main/one_deck_dungeon)
 - [One Night Ultimate Werewolf](https://github.com/pcon/photo_caddy_game_organizers/tree/main/one_night_ultimate_werewolf)
