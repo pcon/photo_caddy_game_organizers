@@ -4,6 +4,7 @@ A home for my photo caddy game oragnizer designs
 I stumbled across this group of game organizers designed to fit inside the Photo and Craft Keeper 4x6 inch storage bins (made by Simply Tidy and others).  This has lead down a rat hole of inserts and sparking ideas inside my head.  This is a place for me to design additional inserts as well as provide tools for others to easily design inserts as well.
 
 # Games
+- [Bananagrams](https://github.com/pcon/photo_caddy_game_organizers/tree/main/bananagrams)
 - [Bears vs Babies](https://github.com/pcon/photo_caddy_game_organizers/tree/main/bears_vs_babies)
 - [Dungeon Roll](https://github.com/pcon/photo_caddy_game_organizers/tree/main/dungeon_roll)
 - [Jaipur](https://github.com/pcon/photo_caddy_game_organizers/tree/main/jaipur)
@@ -11,7 +12,9 @@ I stumbled across this group of game organizers designed to fit inside the Photo
 - [Munckin](https://github.com/pcon/photo_caddy_game_organizers/tree/main/munchkin)
 - [One Deck Dungeon](https://github.com/pcon/photo_caddy_game_organizers/tree/main/one_deck_dungeon)
 - [One Night Ultimate Werewolf](https://github.com/pcon/photo_caddy_game_organizers/tree/main/one_night_ultimate_werewolf)
+- [Pretense](https://github.com/pcon/photo_caddy_game_organizers/tree/main/pretense)
 - [Rumpelstiltskin](https://github.com/pcon/photo_caddy_game_organizers/tree/main/rumpelstiltskin)
+- [Skyjo](https://github.com/pcon/photo_caddy_game_organizers/tree/main/skyjo)
 - [Splendor](https://github.com/pcon/photo_caddy_game_organizers/tree/main/splendor)
 
 # Usage
