@@ -16,6 +16,7 @@ I stumbled across this group of game organizers designed to fit inside the Photo
 - [Rumpelstiltskin](https://github.com/pcon/photo_caddy_game_organizers/tree/main/rumpelstiltskin)
 - [Skyjo](https://github.com/pcon/photo_caddy_game_organizers/tree/main/skyjo)
 - [Splendor](https://github.com/pcon/photo_caddy_game_organizers/tree/main/splendor)
+- [You've Got Crabs](https://github.com/pcon/photo_caddy_game_organizers/tree/main/youve_got_crabs)
 
 # Usage
 1. Check out the repo
